@@ -1,0 +1,61 @@
+{
+  "_comment": "Reference example for the Bmatix PPT skill, pad-B build (3 content slides). Demonstrates: hero+subcards layout with pill + filled headers + Example subcard; cards_2_large with one image placeholder; cards_numbered_steps with per-step colored circles + emojis + conclusion. Use this as a starting template; adapt fields per content needs. Field meanings: see Card Catalog and Common Field Reference in SKILL.md.",
+
+  "intro": {
+    "title": "Q3 Status Update",
+    "subtitle": "Where we are and what's next",
+    "author_date": "Xander Van Oostende, 1 June 2026"
+  },
+  "closing": {
+    "author_date": "Xander Van Oostende, 1 June 2026"
+  },
+  "content_slides": [
+    {
+      "kind": "card",
+      "layout": "card_1_hero_with_subcards",
+      "title": "Approach",
+      "subtitle": "Four building blocks of the PoC",
+      "header_style": "filled",
+      "hero": {
+        "label": "Opportunity",
+        "body": "Demonstrate Fabric IQ Planning end-to-end on Etex finance data.",
+        "pill": "STATUS · IN PROGRESS"
+      },
+      "subcards": [
+        {"title": "Validated", "body": "Scope signed off by Jolien and Nick.", "icon": "✅", "circle_color": "navy"},
+        {"title": "Building",  "body": "Semantic model in progress.",          "icon": "🔨", "circle_color": "navy"},
+        {"title": "Watching",  "body": "Fabric IQ preview limits per region.", "icon": "⚠️", "circle_color": "navy"},
+        {"title": "Example: writeback pattern", "body": "Reuse Jolien's SAP API.", "icon": "💡", "circle_color": "navy"}
+      ]
+    },
+    {
+      "kind": "card",
+      "layout": "cards_2_large",
+      "title": "How it works",
+      "subtitle": "Mechanism and qualifier",
+      "cards": [
+        {
+          "label": "The mechanism",
+          "body": "• 80% of withholding tax retained\n• Engineers with qualifying degrees\n• Dossier filed with Belspo via Leyton\n• Retroactive once recognized"
+        },
+        {
+          "label": "Process diagram",
+          "is_image": true,
+          "image_caption": "Drop Leyton process diagram here"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "layout": "cards_numbered_steps",
+      "title": "Where we are today",
+      "subtitle": "Status and next steps",
+      "steps": [
+        {"title": "Submitted",         "body": "Dossier filed; under review.",     "icon": "📋", "circle_color": "green"},
+        {"title": "In progress",       "body": "Engineers on four themes.",        "icon": "⚡", "circle_color": "navy"},
+        {"title": "End of year",       "body": "Empirical results per theme.",     "icon": "🎯", "circle_color": "orange"}
+      ],
+      "conclusion": "Net effect: dossier in review, R&D continues, results before year-end."
+    }
+  ]
+}
